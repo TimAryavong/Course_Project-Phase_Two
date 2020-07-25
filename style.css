@@ -1,0 +1,49 @@
+/* no styles implemented, just bootstrap */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "toDoList toDoList"
+        "vidHeader vidHeader"
+        "videoBox videoBox";
+}
+
+.header {
+    grid-area: header;
+}
+
+.toDoList {
+    grid-area: toDoList;
+}
+
+.vidHeader {
+    grid-area: vidHeader;
+}
+
+.vidBox {
+    grid-area: videoBox;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "vidBtn picBtn"
+        "video picture";
+}
+
+#video {
+    grid-area: video;
+}
+
+#picture {
+    grid-area: picture;
+
+}
+
+.picBtn {
+    grid-area: picBtn;
+}
+
+.vidBtn {
+    grid-area: vidBtn;
+}
