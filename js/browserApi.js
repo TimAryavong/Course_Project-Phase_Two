@@ -1,6 +1,6 @@
 /*
     Title: Course Project - Phase Two - browserApi.js(webcam and microphone)
-    By: Tim Aryavong
+    By: Tim Aryavong 200176280
     Date: Saturday July 25, 2020
     Description: Gives browser the ability to access(with permission) the users camera and microphone.
 */

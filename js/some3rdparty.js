@@ -1,6 +1,6 @@
 /*
     Title: Course Project - Phase Two - some3rdparty.js(geolocation)
-    By: Tim Aryavong
+    By: Tim Aryavong 200176280
     Date: Saturday July 25, 2020
     Description: The geolocation and google maps from our in-class lecture.
     Decided against scoping up the project due to time constraints and inexperience.
