@@ -1,10 +1,13 @@
+/*
+    Title: Course Project - Phase Two - browserApi.js(webcam and microphone)
+    By: Tim Aryavong
+    Date: Saturday July 25, 2020
+    Description: Gives browser the ability to access(with permission) the users camera and microphone.
+*/
+
 let body = document.querySelector("body"); // since it was kind of modular i just moved the code from lab 9
 
 let videoHead = document.querySelector('.vidHeader'); // declare elements and attributes
-
-// let videoHead = document.createElement("h2"); // declare elements and attributes
-// videoHead.setAttribute('class', 'vidHeader display-4 text-center');
-// videoHead.textContent = "Take a picture!";
 
 let video = document.createElement("video");
 video.autoplay = true;
@@ -22,8 +25,6 @@ let img = document.createElement("img");
 img.setAttribute('id', 'picture');
 
 let div = document.querySelector('.vidBox');
-// div.setAttribute("id", "videoBox");
-// div.setAttribute("class", "text-center");
 
 let supports = navigator.mediaDevices.getSupportedConstraints(); // view supported constraints in the console
 console.log(supports);

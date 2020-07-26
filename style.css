@@ -1,4 +1,13 @@
-/* no styles implemented, just bootstrap */
+/*
+    Title: Course Project - Phase Two - styles.css
+    By: Tim Aryavong
+    Date: Saturday July 25, 2020
+    Description: A to-do list that focuses on demonstrating event handlers and DOM manipulation
+    Phase Two - modularized stuff
+    Created createListItem(item), helper derived from some functionality inside addItem().
+    Updated removeItem, querySelectorAll() now selects only inputs where type is checkbox.
+*/
+
 body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;

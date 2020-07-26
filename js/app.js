@@ -1,11 +1,11 @@
 /*
-    Course Project - Phase Two
+    Title: Course Project - Phase Two - app.js(to-do list)
     By: Tim Aryavong
     Date: Tuesday July 21, 2020
     Description: A to-do list that focuses on demonstrating event handlers and DOM manipulation
     Phase Two - modularized stuff
     Created createListItem(item), helper derived from some functionality inside addItem().
-    Updated removeItem, querySelectorAll() now selects only inputs where type is checkbox.
+    Updated removeItem, querySelectorAll() now querySelector only picks up inputs where type is checkbox (line 34).
 */
 
 let list = document.querySelector('ol'); // bind ol element
