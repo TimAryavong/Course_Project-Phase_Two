@@ -5,20 +5,22 @@
     Description: A basic html page.
     Some additional scripts added, one file per feature.
 -->
-    
+
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>To Do List</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="js/some3rdparty.js" defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVo9EQucAxyM63SVVf033k3l24ninevOc&callback=initMap" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVo9EQucAxyM63SVVf033k3l24ninevOc&callback=initMap"
+        defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/browserApi.js" defer></script>
 </head>
@@ -30,9 +32,9 @@
         <input name="item" type="text" id="inputNewItem">
         <ol class="list"></ol>
         <button id="submit" class="btn btn-dark">Submit</button>
-        <button id="remove"class="btn btn-dark">Delete</button>
+        <button id="remove" class="btn btn-dark">Delete</button>
     </div>
-    <h2 id="vidHeader" class="display-4 text-center"></h2>
+    <h2 id="vidHeader" class="display-4 text-center">Take a picture!</h2>
     <div id="vidBox" class="text-center"></div>
     <div id="mapBox" class="row">
         <h2>Grocery Stores Near You</h2>

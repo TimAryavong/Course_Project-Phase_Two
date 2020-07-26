@@ -11,7 +11,7 @@
     It was tricky to solve, at first I thought it was my grid CSS but even after commenting everything out it didn't work.
 */
 
-let map; 
+let map;
 let infoWindow;
 let mapSpot = document.getElementById("map");
 let georgian = {
@@ -34,7 +34,7 @@ function initMap() {
             function (position) {
                 let pos = {
                     lat: position.coords.latitude,
-                    lng: position.coords.longitude,
+                    lng: position.coords.longitude
                 };
                 infoWindow.setPosition(pos);
                 infoWindow.setContent("Location found.");

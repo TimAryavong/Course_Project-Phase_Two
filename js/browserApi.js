@@ -11,20 +11,20 @@ let videoHead = document.getElementById('vidHeader'); // declare elements and at
 
 let video = document.createElement("video");
 video.autoplay = true;
-video.setAttribute('id', 'video');
+video.setAttribute("id", "video");
 
 let videoBtn = document.createElement("button");
 videoBtn.innerText = "get video";
-videoBtn.setAttribute('class', 'vidBtn btn btn-dark');
+videoBtn.setAttribute("class", "vidBtn btn btn-dark");
 
 let pictureBtn = document.createElement("button");
 pictureBtn.innerText = " take picture";
-pictureBtn.setAttribute('class', 'picBtn btn btn-dark');
+pictureBtn.setAttribute("class", "picBtn btn btn-dark");
 
 let img = document.createElement("img");
-img.setAttribute('id', 'picture');
+img.setAttribute("id", "picture");
 
-let div = document.querySelector('#vidBox');
+let div = document.querySelector("#vidBox");
 
 let supports = navigator.mediaDevices.getSupportedConstraints(); // view supported constraints in the console
 console.log(supports);
@@ -46,7 +46,7 @@ const constraints = { // constraints for video stream size(tried to keep it mini
 function getVideo() { // Returns a promise to resolve with media stream object.
     navigator.mediaDevices.getUserMedia({ //prompts the user for permission to use a media input
         video: true //if permissions are true
-    }).then(mediaStream => {
+    }).then((mediaStream) => {
         console.log(mediaStream.getVideoTracks()); //allows me to view track attributes
         const track = mediaStream.getVideoTracks()[0]; //stream from users pc camera to a variable
         track.applyConstraints(constraints).then(() => { //apply constraints(per above), if constraints were successful then continue
@@ -60,10 +60,10 @@ function getVideo() { // Returns a promise to resolve with media stream object.
 function takePicture() { // Returns a promise to resolve with media stream object.
     navigator.mediaDevices.getUserMedia({ //prompts the user for permission to use a media input
         video: true //if permissions are true
-    }).then(mediaStream => {
+    }).then((mediaStream) => {
         let imageCapture = new ImageCapture(mediaStream.getVideoTracks()[0]); // instantiate an image capture from the video stream
         imageCapture.takePhoto().then(function (photo) { // takes a photo from the stream
-            console.log('Took photo:', photo); // show a console message (photo is a blob? i guess that's true for a computer)
+            console.log("Took photo:", photo); // show a console message (photo is a blob? i guess that's true for a computer)
             img.src = URL.createObjectURL(photo); // set the photo into an image element
         });
     }).catch((error) => { // if media stream failed, show the error
@@ -78,5 +78,5 @@ div.appendChild(videoBtn);
 div.appendChild(pictureBtn);
 body.appendChild(div);
 
-pictureBtn.addEventListener('click', takePicture); // bind buttons
-videoBtn.addEventListener('click', getVideo);
+pictureBtn.addEventListener("click", takePicture); // bind buttons
+videoBtn.addEventListener("click", getVideo);
