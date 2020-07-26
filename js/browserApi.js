@@ -5,9 +5,9 @@
     Description: Gives browser the ability to access(with permission) the users camera and microphone.
 */
 
-let body = document.querySelector("#mainBody"); // since it was kind of modular i just moved the code from lab 9
+let body = document.getElementById("mainBody"); // since it was kind of modular i just moved the code from lab 9
 
-let videoHead = document.querySelector('#vidHeader'); // declare elements and attributes
+let videoHead = document.getElementById('vidHeader'); // declare elements and attributes
 
 let video = document.createElement("video");
 video.autoplay = true;
