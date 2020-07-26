@@ -1,13 +1,14 @@
 /* no styles implemented, just bootstrap */
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "header header"
-        "toDoList toDoList"
-        "vidHeader vidHeader"
-        "videoBox videoBox";
+        "header header header"
+        "toDoList toDoList toDoList"
+        "vidHeader vidHeader vidHeader"
+        "videoBox videoBox videoBox"
+        ". mapBox .";
 }
 
 .header {
@@ -26,6 +27,7 @@ body {
     grid-area: videoBox;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
         "vidBtn picBtn"
         "video picture";
@@ -37,7 +39,6 @@ body {
 
 #picture {
     grid-area: picture;
-
 }
 
 .picBtn {
@@ -47,3 +48,11 @@ body {
 .vidBtn {
     grid-area: vidBtn;
 }
+.mapBox {
+    grid-area: mapBox;
+}
+#map { /*This is needed to overwrite other CSS and actually show the map. Reference: https://stackoverflow.com/questions/49547337/google-maps-api-javascript-no-display-no-errors */
+    width: 100% !important;
+    height: 400px !important;
+    background-color: grey !important;
+  }

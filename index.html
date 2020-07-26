@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
+    <script src="js/some3rdparty.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVo9EQucAxyM63SVVf033k3l24ninevOc&callback=initMap" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/browserApi.js" defer></script>
 </head>
@@ -24,6 +26,13 @@
     </div>
     <h2 class="vidHeader display-4 text-center"></h2>
     <div class="vidBox text-center"></div>
+    <div class="row mapBox">
+        <h2>Grocery Stores Near You</h2>
+        <button id="mylocation">Is There A Grocery Store Near Me?</button>
+        <p id="location"></p>
+
+        <div id="map"></div>
+    </div>
 </body>
 
 </html>
