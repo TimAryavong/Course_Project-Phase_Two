@@ -5,9 +5,9 @@
     Description: Gives browser the ability to access(with permission) the users camera and microphone.
 */
 
-let body = document.querySelector("body"); // since it was kind of modular i just moved the code from lab 9
+let body = document.querySelector("#mainBody"); // since it was kind of modular i just moved the code from lab 9
 
-let videoHead = document.querySelector('.vidHeader'); // declare elements and attributes
+let videoHead = document.querySelector('#vidHeader'); // declare elements and attributes
 
 let video = document.createElement("video");
 video.autoplay = true;
@@ -24,7 +24,7 @@ pictureBtn.setAttribute('class', 'picBtn btn btn-dark');
 let img = document.createElement("img");
 img.setAttribute('id', 'picture');
 
-let div = document.querySelector('.vidBox');
+let div = document.querySelector('#vidBox');
 
 let supports = navigator.mediaDevices.getSupportedConstraints(); // view supported constraints in the console
 console.log(supports);

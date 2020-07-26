@@ -8,13 +8,14 @@
     Updated removeItem, querySelectorAll() now querySelector only picks up inputs where type is checkbox (line 34).
 */
 
-let list = document.querySelector('ol'); // bind ol element
-let submit = document.querySelector('.submit'); // bind submit button
-let remove = document.querySelector('.remove'); // bind remove button
+let list = document.querySelector('.list'); // bind ol element
+let submit = document.getElementById('submit'); // bind submit button
+let remove = document.getElementById('remove'); // bind remove button
 
 function createListItem(item) { //returns newly created list nodes with innerText and appended checkbox inputs, takes an input element as argument
     let checkbox = document.createElement('input'); // create input
     checkbox.setAttribute('type', 'checkbox'); // make input into a checkbox
+    checkbox.setAttribute('class', 'text-center'); // make input into a checkbox
 
     let listItem = document.createElement('li'); // create list element
     listItem.innerText = item.value + ' '; // set innertext from input value

@@ -8,7 +8,7 @@
     Updated removeItem, querySelectorAll() now selects only inputs where type is checkbox.
 */
 
-body {
+#mainBody {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
@@ -20,19 +20,19 @@ body {
         ". mapBox .";
 }
 
-.header {
+#header {
     grid-area: header;
 }
 
-.toDoList {
+#toDoList {
     grid-area: toDoList;
 }
 
-.vidHeader {
+#vidHeader {
     grid-area: vidHeader;
 }
 
-.vidBox {
+#vidBox {
     grid-area: videoBox;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,18 +50,20 @@ body {
     grid-area: picture;
 }
 
-.picBtn {
+#picBtn {
     grid-area: picBtn;
 }
 
-.vidBtn {
+#vidBtn {
     grid-area: vidBtn;
 }
-.mapBox {
+
+#mapBox {
     grid-area: mapBox;
 }
+
 #map { /*This is needed to overwrite other CSS and actually show the map. Reference: https://stackoverflow.com/questions/49547337/google-maps-api-javascript-no-display-no-errors */
     width: 100% !important;
     height: 400px !important;
     background-color: grey !important;
-  }
+}
